@@ -1,6 +1,7 @@
 # anomaly_detection_papers
 CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJCAI, ICLR, ICIP, BMVC, ACCV) で Accept された Anomaly Detection 関連の論文をまとめる  
-(主な自分の興味は、画像を対象とした異常・正常の２クラス分類や異常箇所のセグメンテーション)
+(主な自分の興味は、画像を対象とした異常・正常の２クラス分類や異常箇所のセグメンテーション)  
+検索ワード : anom*, defect, outlier 
 
 # 2022
 ## CVPR2022 Jun 24, 2022
@@ -16,18 +17,29 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 ## IJCAI2021 Aug 26, 2021
 ## ICML2021 Jul 24, 2021
 ## CVPR2021
-### MIST: Multiple Instance Self-Training Framework for Video Anomaly Detection [arXiv](http://arxiv.org/abs/2101.00529)
-### CutPaste: Self-Supervised Learning for Anomaly Detection and Localization [arXiv](http://arxiv.org/abs/2104.04015)
-### Pixel-Wise Anomaly Detection in Complex Driving Scenes [arXiv](http://arxiv.org/abs/2103.05445)
-### PANDA: Adapting Pretrained Features for Anomaly Detection and Segmentation [arXiv](http://arxiv.org/abs/2010.05903)
-### Glancing at the Patch: Anomaly Localization With Global and Local Feature Comparison [pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Glancing_at_the_Patch_Anomaly_Localization_With_Global_and_Local_CVPR_2021_paper.pdf)
-### Anomaly Detection in Video via Self-Supervised and Multi-Task Learning [arXiv](http://arxiv.org/abs/2011.07491)
-### Multiresolution Knowledge Distillation for Anomaly Detection [arXiv](http://arxiv.org/abs/2011.11108)
-### Sewer-ML: A Multi-Label Sewer Defect Classification Dataset and Benchmark [pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Yao_Joint-DetNAS_Upgrade_Your_Detector_With_NAS_Pruning_and_Dynamic_Distillation_CVPR_2021_paper.pdf)
+#### MIST: Multiple Instance Self-Training Framework for Video Anomaly Detection [arXiv](http://arxiv.org/abs/2101.00529)
+#### CutPaste: Self-Supervised Learning for Anomaly Detection and Localization [arXiv](http://arxiv.org/abs/2104.04015)
+#### Pixel-Wise Anomaly Detection in Complex Driving Scenes [arXiv](http://arxiv.org/abs/2103.05445)
+#### PANDA: Adapting Pretrained Features for Anomaly Detection and Segmentation [arXiv](http://arxiv.org/abs/2010.05903)
+#### Glancing at the Patch: Anomaly Localization With Global and Local Feature Comparison [pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Glancing_at_the_Patch_Anomaly_Localization_With_Global_and_Local_CVPR_2021_paper.pdf)
+#### Anomaly Detection in Video via Self-Supervised and Multi-Task Learning [arXiv](http://arxiv.org/abs/2011.07491)
+#### Multiresolution Knowledge Distillation for Anomaly Detection [arXiv](http://arxiv.org/abs/2011.11108)
+#### Sewer-ML: A Multi-Label Sewer Defect Classification Dataset and Benchmark [pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Yao_Joint-DetNAS_Upgrade_Your_Detector_With_NAS_Pruning_and_Dynamic_Distillation_CVPR_2021_paper.pdf)
 
 ###
 ## ICLR 2021
 ## AAAI2021
-
+#### LREN: Low-Rank Embedded Network for Sample-Free Hyperspectral Anomaly Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16536)
+#### GAN Ensemble for Anomaly Detection [arXiv](https://arxiv.org/abs/2012.07988)
+#### Anomaly Attribution with Likelihood Compensation [pdf](https://ide-research.net/papers/2021_AAAI_Ide.pdf)
+#### Regularizing Attention Networks for Anomaly Detection in Visual Question Answering [arXiv](https://arxiv.org/abs/2009.10054)
+#### Appearance-Motion Memory Consistency Network for Video Anomaly Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16177)
+#### Learning Semantic Context from Normal Samples for Unsupervised Anomaly Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16420)
+#### Graph Neural Network-Based Anomaly Detection in Multivariate Time Series [arXiv](https://arxiv.org/abs/2106.06947)
+#### Time Series Anomaly Detection with Multiresolution Ensemble Decoding [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/17152)
+####  Towards Balanced Defect Prediction with Better information Propagation [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16157)
+#### Accelerated Combinatorial Search for Outlier Detection with Provable Bound on Sub-Optimality [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/17475)
+#### Neighborhood Consensus Networks for Unsupervised Multi-view Outlier Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16873)
+#### Outlier Impact Characterization for Time Series Data [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/17379)
 # 2020
 ## ACCV2020 Dec 4, 2020
