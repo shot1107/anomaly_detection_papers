@@ -50,6 +50,7 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 ## ACCV2020 Dec 4, 2020
 #### A Day on Campus - An Anomaly Detection Dataset for Events in a Single Camera [pdf](https://openaccess.thecvf.com/content/ACCV2020/html/Pranav_A_Day_on_Campus_-_An_Anomaly_Detection_Dataset_for_ACCV_2020_paper.html)
 #### Patch SVDD: Patch-level SVDD for Anomaly Detection and Segmentation [arXiv](http://arxiv.org/abs/2006.16067)
+
 ## ICIP2020 Oct 25, 2020
 #### A Stacking Ensemble for Anomaly Based Client-Specific Face Spoofing Detection [pdf](https://ieeexplore.ieee.org/document/9190814)
 #### Anomalous Motion Detection on Highway Using Deep Learning [arXiv](https://arxiv.org/abs/2006.08143)
@@ -59,10 +60,22 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 #### CAM-UNET: Class Activation MAP Guided UNET with Feedback Refinement for Defect Segmentation [pdf](https://ieeexplore.ieee.org/document/9190900)
 #### Weakly-Supervised Defect Segmentation Within Visual Inspection Images of Liquid Crystal Displays in Array Process [pdf](https://ieeexplore.ieee.org/document/9190907)
 
-
-
 ## BMVC2020 Sep 7, 2020
+#### Superpixel Masking and Inpainting for Self-Supervised Anomaly Detection [pdf](https://www.bmvc2020-conference.com/assets/papers/0275.pdf)
+
 ## ECCV2020 Aug 23, 2020
+#### Synthesize then Compare: Detecting Failures and Anomalies for Semantic Segmentation [arXiv](https://arxiv.org/abs/2003.08440)
+#### Few-Shot Scene-Adaptive Anomaly Detection [arXiv](https://arxiv.org/abs/2007.07843)
+#### Clustering Driven Deep Autoencoder for Video Anomaly Detection [pdf](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600324.pdf)
+#### Attention Guided Anomaly Localization in Images [arXiv](https://arxiv.org/abs/1911.08616)
+#### Encoding Structure-Texture Relation with P-Net for Anomaly Detection in Retinal Images [arXiv](https://arxiv.org/abs/2008.03632)
+#### Backpropagated Gradient Representations for Anomaly Detection [arXiv](https://arxiv.org/abs/2007.09507)
+#### CLAWS: Clustering Assisted Weakly Supervised Learning with Normalcy Suppression for Anomalous Event Detection [arXiv](https://arxiv.org/abs/2011.12077)
+#### Neural Batch Sampling with Reinforcement Learning for Semi-Supervised Anomaly Detection [pdf](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123710749.pdf)
+#### ALRe: Outlier Detection for Guided Refinement [pdf](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123520766.pdf)
+#### Handcrafted Outlier Detection Revisited [pdf](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123640766.pdf)
+#### OID: Outlier Identifying and Discarding in Blind Image Deblurring [pdf](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123700596.pdf)
+#### Rotational Outlier Identification in Pose Graphs Using Dual Decomposition [pdf](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123750392.pdf)
 ## ICML2020 Jul 13, 2020
 ## ICCV2020 Jun 22, 2020
 ## CVPR2020 Jun 14, 2020
