@@ -51,6 +51,16 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 #### A Day on Campus - An Anomaly Detection Dataset for Events in a Single Camera [pdf](https://openaccess.thecvf.com/content/ACCV2020/html/Pranav_A_Day_on_Campus_-_An_Anomaly_Detection_Dataset_for_ACCV_2020_paper.html)
 #### Patch SVDD: Patch-level SVDD for Anomaly Detection and Segmentation [arXiv](http://arxiv.org/abs/2006.16067)
 ## ICIP2020 Oct 25, 2020
+#### A Stacking Ensemble for Anomaly Based Client-Specific Face Spoofing Detection [pdf](https://ieeexplore.ieee.org/document/9190814)
+#### Anomalous Motion Detection on Highway Using Deep Learning [arXiv](https://arxiv.org/abs/2006.08143)
+#### Ensemble Learning Using Bagging And Inception-V3 For Anomaly Detection In Surveillance Videos [pdf](https://ieeexplore.ieee.org/abstract/document/9190673)
+#### Discriminative Clip Mining for Video Anomaly Detection [pdf](https://ieeexplore.ieee.org/document/9191072)
+#### A Siamese Network Utilizing Image Structural Differences For Cross-Category Defect Detection [pdf](https://ieeexplore.ieee.org/document/9191128)
+#### CAM-UNET: Class Activation MAP Guided UNET with Feedback Refinement for Defect Segmentation [pdf](https://ieeexplore.ieee.org/document/9190900)
+#### Weakly-Supervised Defect Segmentation Within Visual Inspection Images of Liquid Crystal Displays in Array Process [pdf](https://ieeexplore.ieee.org/document/9190907)
+
+
+
 ## BMVC2020 Sep 7, 2020
 ## ECCV2020 Aug 23, 2020
 ## ICML2020 Jul 13, 2020
