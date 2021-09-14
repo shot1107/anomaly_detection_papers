@@ -14,7 +14,12 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 ## ICIP2021 Sep 22, 2021
 ## ICCV2021 Oct 17, 2021
 ## ECCV2021 Oct 17, 2021
+
 ## IJCAI2021 Aug 26, 2021
+#### Masked Contrastive Learning for Anomaly Detection [arXiv](https://arxiv.org/abs/2105.08793)
+#### Weakly-Supervised Spatio-Temporal Anomaly Detection in Surveillance Video [arXiv](https://arxiv.org/abs/2108.03825)
+#### Understanding the Effect of Bias in Deep Anomaly Detection [arXiv](https://arxiv.org/abs/2105.07346)
+
 ## ICML2021 Jul 24, 2021
 #### Quantifying and Reducing Bias in Maximum Likelihood Estimation of Structured Anomalies [arXiv](https://arxiv.org/abs/2007.07878)
 #### Neural Transformation Learning for Deep Anomaly Detection Beyond Images [arXiv](https://arxiv.org/abs/2103.16440)
@@ -52,9 +57,11 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 #### Outlier Impact Characterization for Time Series Data [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/17379)
 
 ## IJCAI2020 Jan 7, 2021
-#### Masked Contrastive Learning for Anomaly Detection [arXiv](https://arxiv.org/abs/2105.08793)
-#### Weakly-Supervised Spatio-Temporal Anomaly Detection in Surveillance Video [arXiv](https://arxiv.org/abs/2108.03825)
-#### Understanding the Effect of Bias in Deep Anomaly Detection [arXiv](https://arxiv.org/abs/2105.07346)
+#### Inductive Anomaly Detection on Attributed Networks [pdf](https://www.ijcai.org/proceedings/2020/179)
+#### Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact [pdf](https://www.ijcai.org/proceedings/2020/173)
+#### Towards a Hierarchical Bayesian Model of Multi-View Anomaly Detection [pdf](https://www.ijcai.org/proceedings/2020/335)
+#### Cross-Interaction Hierarchical Attention Networks for Urban Anomaly Prediction [pdf](https://www.ijcai.org/proceedings/2020/601)
+#### Latent Regularized Generative Dual Adversarial Network For Abnormal Detection [pdf](https://www.ijcai.org/proceedings/2020/106)
 
 
 # 2020
