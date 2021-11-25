@@ -12,6 +12,20 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 ## NeurIPS2021 Dec 6, 2021
 ## BMVC2021 Nov 25, 2021
 ## ICIP2021 Sep 22, 2021
+#### A Two-Stage Autoencoder For Visual Anomaly Detection [pdf](https://ieeexplore.ieee.org/document/9506538)
+#### Anomaly Detection via Self-organizing Map [arXiv](https://arxiv.org/abs/2107.09903)
+#### Deep Unsupervised Image Anomaly Detection: An Information Theoretic Framework [arXiv](https://arxiv.org/abs/2012.04837)
+#### Joint Anomaly Detection and Inpainting for Microscopy Images Via Deep Self-Supervised Learning [pdf](https://ieeexplore.ieee.org/abstract/document/9506454)
+#### Multi-Scale Background Suppression Anomaly Detection In Surveillance Videos [pdf](https://ieeexplore.ieee.org/document/9506580)
+#### Particle Swarm And Pattern Search Optimisation Of An Ensemble Of Face Anomaly Detectors [pdf](https://ieeexplore.ieee.org/document/9506251)
+#### SAGAN: Skip-Attention GAN For Anomaly Detection [pdf](https://ieeexplore.ieee.org/abstract/document/9506332)
+#### Toward Unsupervised 3d Point Cloud Anomaly Detection Using Variational Autoencoder [pdf](https://ieeexplore.ieee.org/document/9506795)
+#### Unsupervised Variability Normalization For Anomaly Detection [pdf](https://ieeexplore.ieee.org/document/9506742)
+#### Effort-free Automated Skeletal Abnormality Detection of Rat Fetuses on Whole-body Micro-CT Scans [arXiv](https://arxiv.org/abs/2106.01830)
+#### Cam-Guided U-Net With Adversarial Regularization For Defect Segmentation [pdf](https://ieeexplore.ieee.org/document/9506582)
+#### Defect Inspection using Gravitation Loss and Soft Labels [pdf](https://ieeexplore.ieee.org/document/9506327)
+#### Identification Of In-Field Sensor Defects In The Context Of Image Age Approximation [pdf](https://ieeexplore.ieee.org/document/9506023)
+#### S2D2Net: An Improved Approach For Robust Steel Surface Defects Diagnosis With Small Sample Learning [pdf](https://ieeexplore.ieee.org/document/9506405)
 
 ## ICCV2021 Oct 17, 2021
 #### Weakly Supervised Temporal Anomaly Segmentation with Dynamic Time Warping [arXiv](https://arxiv.org/abs/2108.06816)
