@@ -10,7 +10,16 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 # 2021
 ## NeurIPS2021 Dec 6, 2021
+#### Online false discovery rate control for anomaly detection in time series [pdf](https://openreview.net/forum?id=NvN_B_ZEY5c)
+#### Detecting Anomalous Event Sequences with Temporal Point Processes [pdf](https://openreview.net/forum?id=MTMyxzrIKsM)
+#### Learned Robust PCA: A Scalable Deep Unfolding Approach for High-Dimensional Outlier Detection [pdf](https://openreview.net/forum?id=G7W2mriQLxf)
+
 ## BMVC2021 Nov 25, 2021
+#### Student-Teacher Feature Pyramid Matching for Anomaly Detection [arXiv](https://arxiv.org/abs/2103.04257)
+#### Learning Not to Reconstruct Anomalies [arXiv](https://arxiv.org/abs/2110.09742)
+#### ESAD: End-to-end Deep Semi-supervised Anomaly Detection [arXiv](https://arxiv.org/abs/2012.04905)
+#### Elsa: Energy-based learning for semi-supervised anomaly detection [arXiv](https://arxiv.org/abs/2103.15296)
+
 ## ICIP2021 Sep 22, 2021
 #### A Two-Stage Autoencoder For Visual Anomaly Detection [pdf](https://ieeexplore.ieee.org/document/9506538)
 #### Anomaly Detection via Self-organizing Map [arXiv](https://arxiv.org/abs/2107.09903)
