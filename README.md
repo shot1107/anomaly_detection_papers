@@ -22,6 +22,10 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## ICIP2021 Sep 22, 2021
 #### A Two-Stage Autoencoder For Visual Anomaly Detection [pdf](https://ieeexplore.ieee.org/document/9506538)
+**Domain:** Image  
+**Dataset:** MNIST, FMNIST, CIFAR10, Fastener  
+**Index Terms:** Autoencoder, RotNet  
+Deep convolutional autoencoder（DCAE)が異常箇所までも再構成してしまう問題を解決するため、2ステージで学習を行う非対称DCAEを提案。まず、RotNet をEncoderとして学習し、学習済みRotNetを凍結したまま2種類のDecoderを学習(1つはloss関数にMSEを、もう1つはSSIMを使用)。2つのDecoderの結果を組み合わせるて最終的な異常スコアを得る。FMNIST, Fastenerにおいてベースライン手法より優れた性能。
 #### Anomaly Detection via Self-organizing Map [arXiv](https://arxiv.org/abs/2107.09903)
 #### Deep Unsupervised Image Anomaly Detection: An Information Theoretic Framework [arXiv](https://arxiv.org/abs/2012.04837)
 #### Joint Anomaly Detection and Inpainting for Microscopy Images Via Deep Self-Supervised Learning [pdf](https://ieeexplore.ieee.org/abstract/document/9506454)
