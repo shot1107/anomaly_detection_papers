@@ -99,6 +99,12 @@ Deep convolutional autoencoder（DCAE)が異常箇所までも再構成してし
 #### Cross-Interaction Hierarchical Attention Networks for Urban Anomaly Prediction [pdf](https://www.ijcai.org/proceedings/2020/601)
 #### Latent Regularized Generative Dual Adversarial Network For Abnormal Detection [pdf](https://www.ijcai.org/proceedings/2020/106)
 
+## Other important papers published in 2021 / その他2021年の重要論文
+#### Image-based Plant Disease Diagnosis with Unsupervised Anomaly Detection Based on Reconstructability of Colors (accepted by IMPROVE 2021) [arXiv](https://arxiv.org/abs/2011.14306) 
+**Domain:** Image  
+**Dataset:**  PlantVillage  
+**Index Terms:** pix2pix, CIEDE2000  
+画像間スタイル変換手法である pix2pix を用いた異常検出。訓練画像(RGB)とそれをグレースケールに変換した画像をペアにして pix2pix を学習。そのように学習されたモデルは、テスト画像(RGB)->グレースケール->再構成画像(RGB) と変換する際に、欠陥箇所の色を再構成できない。テスト画像(RGB)と再構成画像(RGB)の差分を CIEDE2000 に基づいてとり、異常度を計算。AnoGAN, AE等と比較し優れた性能。
 
 # 2020
 ## NeurIPS2020 Dec 6, 2020
