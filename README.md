@@ -1,4 +1,7 @@
 # anomaly_detection_papers
+summary of anomaly detection papers accepted at top conferences in CV, ML, and AI(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJCAI, ICLR, ICIP, BMVC, ACCV)   
+(My main interest is in the two-class classification of abnormal/normal and segmentation of abnormal areas)
+
 CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJCAI, ICLR, ICIP, BMVC, ACCV) で Accept された Anomaly Detection 関連の論文をまとめる  
 (主な自分の興味は、画像を対象とした異常・正常の２クラス分類や異常箇所のセグメンテーション)  
 検索ワード : anom*, abnom*, defect, outlier 
@@ -80,6 +83,10 @@ Deep convolutional autoencoder（DCAE)が異常箇所までも再構成してし
 ## AAAI2021 Feb 2, 2021
 #### LREN: Low-Rank Embedded Network for Sample-Free Hyperspectral Anomaly Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16536)
 #### GAN Ensemble for Anomaly Detection [arXiv](https://arxiv.org/abs/2012.07988)
+**Domain:** Image  
+**Dataset:** MNIST, CIFAR-10, OCT, KDD99  
+**Index Terms:** GAN, Ensemble  
+GANの学習には不安定性やモード崩壊などいくつかの欠点があるが、近年の研究でGeneratorやDiscriminatorを複数用意することでそれらの問題を解決できることが示されている。この論文では、複数のGenerator(実際にはEncoder-Decoder)とDiscriminatorを用意し、それらをアンサンブルすることで画像の異常検出問題を解決している。訓練時にはGeneratorは複数のDiscriminatorからフィードバックを受け、Discriminatorは複数のGeneratorの出力を識別する。推論時はすべてネットワーク(Encoder-Decoder⇨Discriminator)の出力の平均をとる。ベースモデルとして、f-AnoGAN・EGBAD・GANomaly・Skip-GANomalyを使用し、すべてのデータセットで単体モデルよりアンサンブルの方が優れた性能。
 #### Anomaly Attribution with Likelihood Compensation [pdf](https://ide-research.net/papers/2021_AAAI_Ide.pdf)
 #### Regularizing Attention Networks for Anomaly Detection in Visual Question Answering [arXiv](https://arxiv.org/abs/2009.10054)
 #### Appearance-Motion Memory Consistency Network for Video Anomaly Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16177)
@@ -87,7 +94,7 @@ Deep convolutional autoencoder（DCAE)が異常箇所までも再構成してし
 #### Graph Neural Network-Based Anomaly Detection in Multivariate Time Series [arXiv](https://arxiv.org/abs/2106.06947)
 #### Time Series Anomaly Detection with Multiresolution Ensemble Decoding [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/17152)
 #### A New Window Loss Function for Bone Fracture Detection and Localization in X-ray Images with Point-based Annotation [arXiv](https://arxiv.org/abs/2012.04066)
-####  Towards Balanced Defect Prediction with Better information Propagation [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16157)
+#### Towards Balanced Defect Prediction with Better information Propagation [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16157)
 #### Accelerated Combinatorial Search for Outlier Detection with Provable Bound on Sub-Optimality [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/17475)
 #### Neighborhood Consensus Networks for Unsupervised Multi-view Outlier Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16873)
 #### Outlier Impact Characterization for Time Series Data [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/17379)
