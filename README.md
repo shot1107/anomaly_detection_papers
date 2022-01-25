@@ -276,4 +276,9 @@ GANの学習には不安定性やモード崩壊などいくつかの欠点が�
 #### Partial Multi-View Outlier Detection Based on Collective Learning [pdf](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewPaper/17166)
 #### Sparse Modeling-Based Sequential Ensemble Learning for Effective Outlier Detection in High-Dimensional Numeric Data [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/11692)
 
-
+## important papers published in 2017 / 2017年の重要論文
+#### Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery (accepted by  IPMI 2017) [arXiv](https://arxiv.org/pdf/1703.05921.pdf)
+**Domain:** image  
+**Dataset:** 網膜のボリュームデータ(clinical high resolution SD-OCT volumes of the retina)  
+**Index Terms:** GAN  
+GANを利用した異常検出手法(この論文が初出？)AnoGANを提案。GANに正常画像のみを学習させると、Generator Gはz(ランダムノイズ)から正常画像のみを生成する。テストデータ x が異常画像である場合、x と生成された画像には差分が生まれる。x に対応する z は residural loss と discrimination loss を元に誤差逆伝搬法で更新しながら、求めていく。
