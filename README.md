@@ -276,6 +276,13 @@ GANの学習には不安定性やモード崩壊などいくつかの欠点が�
 #### Partial Multi-View Outlier Detection Based on Collective Learning [pdf](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewPaper/17166)
 #### Sparse Modeling-Based Sequential Ensemble Learning for Effective Outlier Detection in High-Dimensional Numeric Data [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/11692)
 
+## Other important papers published in 2018 / その他2018年の重要論文
+#### EFFICIENT GAN-BASED ANOMALY DETECTION (ICLR2018 workshop) [arXiv](https://arxiv.org/abs/1802.06222)
+**Domain:** image  
+**Dataset:** MNIST, KDD99  
+**Index Terms:** GAN, Encoder  
+GANベースの異常検出手法を提案(Efficient GAN, EGBADと呼ばれている)。AnoGANではテスト画像 x に対応する z(ランダムノイズ)を勾配降下法によって更新しながら求めていたが、この論文では、x から 直接 z を生成する Encoder を導入した。AnoGAN と比較し、性能の向上、推論時間は700~900倍速くなった。
+
 ## important papers published in 2017 / 2017年の重要論文
 #### Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery (accepted by  IPMI 2017) [arXiv](https://arxiv.org/pdf/1703.05921.pdf)
 **Domain:** image  
