@@ -243,6 +243,12 @@ GANの学習には不安定性やモード崩壊などいくつかの欠点が�
 #### Efficient Anomaly Detection via Matrix Sketching [arXiv](https://arxiv.org/abs/1804.03065)
 #### A Practical Algorithm for Distributed Clustering and Outlier Detection [arXiv](https://arxiv.org/abs/1805.09495)
 
+## ACCV2018 Dec 2, 2018 [list](https://link.springer.com/book/10.1007/978-3-030-20887-5)
+#### A Defect Inspection Method for Machine Vision Using Defect Probability Image with Deep Convolutional Neural Network [pdf](https://www.semanticscholar.org/paper/A-Defect-Inspection-Method-for-Machine-Vision-Using-Jang-Yun/53b901258cfd4e4741ae9ae176977c2525621a0d)
+#### AVID: Adversarial Visual Irregularity Detection [arXiv](https://arxiv.org/abs/1805.09521)
+#### GANomaly: Semi-Supervised Anomaly Detection via Adversarial Training [arXiv](https://arxiv.org/abs/1805.06725)
+#### Detecting Anomalous Trajectories via Recurrent Neural Networks [pdf](https://faculty.ucmerced.edu/mhyang/papers/accv2018_anomaly.pdf)
+
 ## ICIP2018 Oct 7, 2018
 #### Reducing Anomaly Detection in Images to Detection in Noise [arXiv](https://arxiv.org/abs/1904.11276)
 #### Abnormal Event Detection in Videos using Spatiotemporal Autoencoder [arXiv](https://arxiv.org/abs/1701.01546)
@@ -282,6 +288,8 @@ GANの学習には不安定性やモード崩壊などいくつかの欠点が�
 **Dataset:** MNIST, KDD99  
 **Index Terms:** GAN, Encoder  
 GANベースの異常検出手法を提案(Efficient GAN, EGBADと呼ばれている)。AnoGANではテスト画像 x に対応する z(ランダムノイズ)を勾配降下法によって更新しながら求めていたが、この論文では、x から 直接 z を生成する Encoder を導入した。AnoGAN と比較し、性能の向上、推論時間は700~900倍速くなった。
+
+# 2017
 
 ## important papers published in 2017 / 2017年の重要論文
 #### Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery (accepted by  IPMI 2017) [arXiv](https://arxiv.org/pdf/1703.05921.pdf)
