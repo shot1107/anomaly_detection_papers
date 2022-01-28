@@ -246,7 +246,12 @@ GANの学習には不安定性やモード崩壊などいくつかの欠点が�
 ## ACCV2018 Dec 2, 2018 [list](https://link.springer.com/book/10.1007/978-3-030-20887-5)
 #### A Defect Inspection Method for Machine Vision Using Defect Probability Image with Deep Convolutional Neural Network [pdf](https://www.semanticscholar.org/paper/A-Defect-Inspection-Method-for-Machine-Vision-Using-Jang-Yun/53b901258cfd4e4741ae9ae176977c2525621a0d)
 #### AVID: Adversarial Visual Irregularity Detection [arXiv](https://arxiv.org/abs/1805.09521)
-#### GANomaly: Semi-Supervised Anomaly Detection via Adversarial Training [arXiv](https://arxiv.org/abs/1805.06725)
+#### GANomaly: Semi-Supervised Anomaly Detection via Adversarial Training [arXiv](https://arxiv.org/abs/1805.06725) [実装(著者)](https://github.com/samet-akcay/ganomaly)
+**Domain:** Image  
+**Dataset:** MNIST, CIFAR10, UBA, FFOB  
+**Index Terms:** GAN, Encoder, Decoder  
+GANベースの異常検出手法 GANomaly を提案。Generator に encoder-decoder-encoderアーキテクチャを導入。最初の Encoder はテスト画像 x から z(ランダムノイズ)を生成、Decoder は z から訓練データ(正常画像)に近い画像 x’ を生成、2つめの Encoder は x’ から z に近いランダムノイズ z’ を生成する。 (z, z’)に関する Encoder Loss、 (x, x’)に関する Contextual Loss、Discriminator の出力(Softmaxの前)に関する Adversarial Loss、3種類の損失関数の重み付き和で Generator を訓練する。AnoGAN, EGBAD と比較し、ほぼすべてのデータセットで良い精度。
+
 #### Detecting Anomalous Trajectories via Recurrent Neural Networks [pdf](https://faculty.ucmerced.edu/mhyang/papers/accv2018_anomaly.pdf)
 
 ## ICIP2018 Oct 7, 2018
