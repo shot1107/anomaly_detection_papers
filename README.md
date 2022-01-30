@@ -236,6 +236,14 @@ GANの学習には不安定性やモード崩壊などいくつかの欠点が�
 #### Robustness Can Be Cheap: A Highly Efficient Approach to Discover Outliers under High Outlier Ratios [pdf](https://ojs.aaai.org//index.php/AAAI/article/view/4468)
 #### Embedding-Based Complex Feature Value Coupling Learning for Detecting Outliers in Non-IID Categorical Data [pdf](https://ojs.aaai.org//index.php/AAAI/article/view/4495)
 
+## Other important papers published in 2019 / その他2019年の重要論文
+#### f-AnoGAN: Fast unsupervised anomaly detection with generative adversarial networks (Medical Image Analysis · January 2019) [pdf](https://www.researchgate.net/publication/330796048_f-AnoGAN_Fast_Unsupervised_Anomaly_Detection_with_Generative_Adversarial_Networks) [実装(著者)](https://github.com/tSchlegl/f-AnoGAN)
+**Domain:** image  
+**Dataset:** 網膜のボリュームデータ(AnoGAN の論文と同様のもの)  
+**Index Terms:** GAN, WGAN  
+GANベースの異常検出手法 f-AnoGAN を提案。GAN のアーキテクチャには WGAN を採用。入力画像 x からランダムノイズ z のマッピングのため、Encoder を導入。Encoder 学習の損失関数には izi_f を使用、izi_f は 入力画像 x と生成画像 x’ の差と、Discriminator の中間層の出力の差を元に計算される。AE, ALI, iterative ベースの手法と比較し、高いROCAUC。
+
+
 # 2018
 ## NeurIPS2018 Dec 2, 2018
 #### Deep Anomaly Detection Using Geometric Transformations [arXiv](https://arxiv.org/abs/1805.10917)
