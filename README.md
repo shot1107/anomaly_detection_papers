@@ -234,7 +234,10 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### f-AnoGAN: Fast unsupervised anomaly detection with generative adversarial networks (Medical Image Analysis · January 2019) [pdf](https://www.researchgate.net/publication/330796048_f-AnoGAN_Fast_Unsupervised_Anomaly_Detection_with_Generative_Adversarial_Networks) [実装(著者)](https://github.com/tSchlegl/f-AnoGAN)
   - **Domain:** image / **Dataset:** 網膜のボリュームデータ(AnoGAN の論文と同様のもの) / **Index Terms:** GAN, WGAN  
   - GANベースの異常検出手法 f-AnoGAN を提案。GAN のアーキテクチャには WGAN を採用。入力画像 x からランダムノイズ z のマッピングのため、Encoder を導入。Encoder 学習の損失関数には izi_f を使用、izi_f は 入力画像 x と生成画像 x’ の差と、Discriminator の中間層の出力の差を元に計算される。AE, ALI, iterative ベースの手法と比較し、高いROCAUC。
-
+- #### Skip-GANomaly: Skip Connected and Adversarially Trained Encoder-Decoder Anomaly Detection (IJCNN 2019) [arXiv](https://arxiv.org/abs/1901.08954) [実装(著者)](https://github.com/samet-akcay/skip-ganomaly)
+   - **Domain:** Image / **Dataset:** CIFAR10, UBA, FFOB / **Index Terms:** GAN, encoder-decoder, skip connection
+   - GANomaly と同じ著者の論文。GANomaly では Generator として encoder-decoder が用いられていたが、そこに UNet スタイルの skip connection が導入されている(encoder の i 層目の出力が decoder の n-1 層目に接続されているような構造)。また、Discriminator に関する、Adversarial Loss にも変更が加えられている。AnoGAN, EGBAD, GANomaly と比較し、ほとんどのデータセットで最高の AUC。
+   - 論文中の再構成後の画像を見ると、異常箇所まで再構成してしまっているように見える、skip connection の影響で再構成能力が高まりすぎている可能性も？
 
 # 2018
 ## NeurIPS2018 Dec 2, 2018
@@ -248,7 +251,7 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### AVID: Adversarial Visual Irregularity Detection [arXiv](https://arxiv.org/abs/1805.09521)
 - #### GANomaly: Semi-Supervised Anomaly Detection via Adversarial Training [arXiv](https://arxiv.org/abs/1805.06725) [実装(著者)](https://github.com/samet-akcay/ganomaly)
   - **Domain:** Image / **Dataset:** MNIST, CIFAR10, UBA, FFOB / **Index Terms:** GAN, 
-  - GANベースの異常検出手法 GANomaly を提案。Generator に encoder-decoder-encoderアーキテクチャを導入。最初の Encoder はテスト画像 x から z(ランダムノイズ)を生成、Decoder は z から訓練データ(正常画像)に近い画像 x’ を生成、2つめの Encoder は x’ から z に近いランダムノイズ z’ を生成する。 (z, z’)に関する Encoder Loss、 (x, x’)に関する Contextual Loss、Discriminator の出力(Softmaxの前)に関する Adversarial Loss、3種類の損失関数の重み付き和で Generator を訓練する。AnoGAN, EGBAD と比較し、ほぼすべてのデータセットで良い精度。
+  - GANベースの異常検出手法 GANomaly を提案。Generator に encoder-decoder-encoderアーキテクチャを導入。最初の Encoder はテスト画像 x から z(ランダムノイズ)を生成、Decoder は z から訓練データ(正常画像)に近い画像 x’ を生成、2つめの Encoder は x’ から z に近いランダムノイズ z’ を生成する。 (z, z’)に関する Encoder Loss、 (x, x’)に関する Contextual Loss、Discriminator の出力(Softmaxの前)に関する Adversarial Loss、3種類の損失関数の重み付き和で Generator を訓練する。AnoGAN, EGBAD と比較し、ほぼすべてのデータセットで最高精度。
 
 - #### Detecting Anomalous Trajectories via Recurrent Neural Networks [pdf](https://faculty.ucmerced.edu/mhyang/papers/accv2018_anomaly.pdf)
 
@@ -288,7 +291,7 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 ## Other important papers published in 2018 / その他2018年の重要論文
 - #### EFFICIENT GAN-BASED ANOMALY DETECTION (ICLR2018 workshop) [arXiv](https://arxiv.org/abs/1802.06222)
   - **Domain:** image / **Dataset:** MNIST, KDD99 / **Index Terms:** GAN, Encoder  
-  - GANベースの異常検出手法を提案(Efficient GAN, EGBADと呼ばれている)。AnoGANではテスト画像 x に対応する z(ランダムノイズ)を勾配降下法によって更新しながら求めていたが、この論文では、x から 直接 z を生成する Encoder を導入した。AnoGAN と比較し、性能の向上、推論時間は700~900倍速くなった。
+  - GANベースの異常検出手法を提案(Efficient GAN, EGBADと呼ばれている)。AnoGANではテスト画像 x に対応する z(ランダムノイズ)を勾配降下法によって更新しながら求めていたが、この論文では、x から 直接 z を生成する Encoder を導入した。AnoGAN と比較し、精度の向上、推論時間は700~900倍速くなった。
 
 # 2017
 
