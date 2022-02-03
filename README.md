@@ -7,9 +7,25 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 検索ワード : anom*, abnom*, defect, outlier 
 
 # 2022
-## CVPR2022 Jun 24, 2022
-## ICLR2022 Apr 29, 2022
-## AAAI2022  Mar 1, 2022
+## IJCAI2022 Jul 23, 2022 (Paper notification: April 20, 2022) 
+
+## CVPR2022 Jun 24, 2022 (final dicision: March 2, 2022)
+
+## ICLR2022 Apr 29, 2022 [link](https://openreview.net/group?id=ICLR.cc/2022/Conference)
+- #### Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy [arXiv](https://arxiv.org/abs/2110.02642)
+- #### Graph-Augmented Normalizing Flows for Anomaly Detection of Multiple Time Series [pdf](https://openreview.net/forum?id=45L_dgP48Vd)
+- #### Anomaly Detection for Tabular Data with Internal Contrastive Learning [pdf](https://openreview.net/forum?id=_hszZbt46bT)
+- #### Igeood: An Information Geometry Approach to Out-of-Distribution Detection [pdf](https://openreview.net/forum?id=mfwdY3U_9ea)
+
+## AAAI2022  Mar 1, 2022 [link](https://aaai.org/Conferences/AAAI-22/wp-content/uploads/2021/12/AAAI-22_Accepted_Paper_List_Main_Technical_Track.pdf) (TODO: add some paper's PDF link)
+- #### A Causal Inference Look at Unsupervised Video Anomaly Detection
+- #### Comprehensive Regularization in a Bi-Directional Predictive Network for Video Anomaly Detection
+- #### Towards a Rigorous Evaluation of Time-series Anomaly Detection [arXiv](https://arxiv.org/abs/2109.05257)
+- #### Self-Training Multi-Sequence Learning with Transformer for Weakly Supervised Video Anomaly Detection
+- #### Unsupervised Anomaly Detection by Robust Density Estimation
+- #### Transferring the Contamination Factor between Anomaly Detection Domains by Shape Similarity
+- #### Calibrated Nonparametric Scan Statistics for Anomalous Pattern Detection in Graphs
+- #### LUNAR: Unifying Local Outlier Detection Methods via Graph Neural Networks [arXiv](https://arxiv.org/abs/2112.05355)
 
 # 2021
 ## NeurIPS2021 Dec 6, 2021
