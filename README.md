@@ -238,6 +238,9 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### Object-centric Auto-encoders and Dummy Anomalies for Abnormal Event Detection in Video [arXiv](https://arxiv.org/abs/1812.04960)
 - #### ManTra-Net: Manipulation Tracing Network for Detection and Localization of Image Forgeries With Anomalous Features [pdf](https://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html)
 - #### MVTec AD -- A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection [pdf](https://openaccess.thecvf.com/content_CVPR_2019/html/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.html)
+   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  Dataset
+   - 画像の異常検出用のデータセット、MVTec Anomaly Detection (MVTec AD) の紹介論文。5種類のテクスチャカテゴリのデータと、10種類のオブジェクトカテゴリのデータからなり、全部で5354枚の画像が含まれる。セグメンテーション(ピクセル単位の欠陥箇所特定)タスク用に、欠陥箇所を示した grand truth 画像も提供される。AE や AnoGAN等の基本的な手法を用いた実験も行っている。
+   - 2020~に発表された画像の異常検出を扱った論文では、このデータセットが使用されていることがかなり多い。
 - #### Learning Regularity in Skeleton Trajectories for Anomaly Detection in Videos [arXiv](https://openaccess.thecvf.com/CVPR2019?day=2019-06-20)
 - #### Meta-learning Convolutional Neural Architectures for Multi-target Concrete Defect Classification with the COncrete DEfect BRidge IMage Dataset [arXiv](https://arxiv.org/abs/1904.08486)
 
