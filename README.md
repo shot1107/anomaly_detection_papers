@@ -92,6 +92,9 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 ## CVPR2021 Jun 19, 2021
 - #### MIST: Multiple Instance Self-Training Framework for Video Anomaly Detection [arXiv](http://arxiv.org/abs/2101.00529)
 - #### CutPaste: Self-Supervised Learning for Anomaly Detection and Localization [arXiv](http://arxiv.org/abs/2104.04015)
+   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  Self-Supervised Learning, Data Augmentation, ResNet, EfficientNet
+   - CutPaste という画像中の長方形領域を別の場所にペーストしたような data augmentation を提案、CutPaste によって生成した擬似的な異常画像を用いて、自己教師あり学習として欠陥箇所の表現を学習する。画像の異常スコアは、(獲得した表現上での) Gaussian density estimator を用いて計算される。Localization (≒セグメンテーション)では、パッチ単位(切り取られた部分画像)で学習した表現を利用する。テスト時は、スライドしながら画像のパッチを取得していき、それぞれのパッチで異常スコアを計算していく。そうすると n×n (nは入力画像サイズより小さい)の異常マップが作成でき、それを Gaussian smoothing を用いて upsampling することで元の画像サイズの異常マップを生成する。MVTec AD データセットで当時の SoTA を達成。
+   - アイディアはシンプルだが精度向上のための細かい詰めがすごい。
 - #### Pixel-Wise Anomaly Detection in Complex Driving Scenes [arXiv](http://arxiv.org/abs/2103.05445)
 - #### PANDA: Adapting Pretrained Features for Anomaly Detection and Segmentation [arXiv](http://arxiv.org/abs/2010.05903)
 - #### Glancing at the Patch: Anomaly Localization With Global and Local Feature Comparison [pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Glancing_at_the_Patch_Anomaly_Localization_With_Global_and_Local_CVPR_2021_paper.pdf)
