@@ -200,6 +200,11 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### Adaptive Double-Exploration Tradeoff for Outlier Detection [arXiv](https://arxiv.org/abs/2005.06092)
 - #### Outlier Detection Ensemble with Embedded Feature Selection [arXiv](https://arxiv.org/abs/2001.05492)
 
+## Other important papers published in 2020 / その他2020年の重要論文
+- #### Modeling the Distribution of Normal Data in Pre-Trained Deep Features for Anomaly Detection (ICPR2020) [arXiv](https://arxiv.org/abs/2005.14140)
+   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  EfficientNet, Multivariate Gaussian, Mahalanobis Distance
+   - ImageNet によって事前学習された EfficientNet をそのまま利用し、その特徴表現を用いて異常検知を行う手法を提案。学習パートでは、正常画像のみを用い、EfficientNet に正常画像を与えたときに生成された特徴ベクトルを近似する多変量ガウス分布を求める。推論パートでは、テスト画像をモデルに入力して得られた特徴表現と分布の平均とのマハラノビス距離を求め、それを元に異常度を計算する。モデルの再訓練をしていないにも関わらず、95.8という高いAUROCを達成。
+
 # 2019
 ## NeurIPS2019 Dec 8, 2019
 - #### Transfer Anomaly Detection by Inferring Latent Domain Representations [pdf](https://papers.nips.cc/paper/2019/hash/7895fc13088ee37f511913bac71fa66f-Abstract.html)
