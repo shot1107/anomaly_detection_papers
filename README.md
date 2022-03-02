@@ -24,6 +24,7 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### Graph-Augmented Normalizing Flows for Anomaly Detection of Multiple Time Series [pdf](https://openreview.net/forum?id=45L_dgP48Vd)
 - #### Anomaly Detection for Tabular Data with Internal Contrastive Learning [pdf](https://openreview.net/forum?id=_hszZbt46bT)
 - #### Igeood: An Information Geometry Approach to Out-of-Distribution Detection [pdf](https://openreview.net/forum?id=mfwdY3U_9ea)
+- #### VOS: Learning What You Don't Know by Virtual Outlier Synthesis [arXiv](https://arxiv.org/abs/2202.01197)
 
 ## AAAI2022 Mar 1, 2022 [link](https://aaai.org/Conferences/AAAI-22/wp-content/uploads/2021/12/AAAI-22_Accepted_Paper_List_Main_Technical_Track.pdf) (TODO: add some paper's PDF link)
 - #### A Causal Inference Look at Unsupervised Video Anomaly Detection
