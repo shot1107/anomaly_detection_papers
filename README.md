@@ -105,6 +105,8 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## ICLR 2021 May 3, 2021
 - #### Explainable Deep One-Class Classification [arXiv](https://arxiv.org/abs/2007.01760)
+   - **Domain:** Image / **Dataset:**  Fashion-MNIST, CIFAR-10, ImageNet, MVTec AD / **Index Terms:**  one-class classification(OCC), transposed Gaussian convolution
+   - 説明可能(≒可視化可能)な異常検知手法、Fully Convolutional Data Description (FCDD) を提案。Fully Convolutional Network (FCN, 全結合層を含まないCNN) と Hypersphere Classifier (HSC, 正常データと異常データを用いて分布を学習、正常データは中心近くに、異常データは中心から遠くにマッピングされる) の考え方を元にしている。FCDD は R^(c×h×w) → R^(u×v) のマッピングを学習し、ダウンサンプリングされた異常マップを生成する(元画像から小さな異常マップを生成するイメージ)。学習には異常データも用いられるが、MVTec AD のような異常データが訓練データに含まれないデータセットを用いる場合は、シミのようなノイズを正常データに埋め込むことで、擬似的な異常データを生成している。その異常マップをガウシアンカーネルを用いた転置畳み込みを用いてアップサンプリングし、最終的な異常マップを得る。AnoGAN や VAE 等のベースラインの AUC を上回っており、半教師あり(異常データを少数用いる)で学習することで AUC が向上することも確認している。
 
 ## AAAI2021 Feb 2, 2021
 - #### LREN: Low-Rank Embedded Network for Sample-Free Hyperspectral Anomaly Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16536)
