@@ -58,6 +58,8 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### Multi-Scale Background Suppression Anomaly Detection In Surveillance Videos [pdf](https://ieeexplore.ieee.org/document/9506580)
 - #### Particle Swarm And Pattern Search Optimisation Of An Ensemble Of Face Anomaly Detectors [pdf](https://ieeexplore.ieee.org/document/9506251)
 - #### SAGAN: Skip-Attention GAN For Anomaly Detection [pdf](https://ieeexplore.ieee.org/abstract/document/9506332)
+   - **Domain:** Image / **Dataset:** CIFAR-10, LBOT(独自) / **Index Terms:**  GAN, Attention
+   - Skip-GANomaly をベースに Attention モジュールを追加した、異常検知手法 Skip-Attention GAN (SAGAN) を提案。Attention モジュールは、異常が現れる局所的な領域に注目することを目的としている。具体的な構造は、U-Net 型のネットワークで Skip connection の前に CBAM(convolutional block attention module) が挿入されているような形になっている。EGBAD, GANomaly, Skip-GANomaly と比較し、AUC が大幅に向上。
 - #### Toward Unsupervised 3d Point Cloud Anomaly Detection Using Variational Autoencoder [pdf](https://ieeexplore.ieee.org/document/9506795)
 - #### Unsupervised Variability Normalization For Anomaly Detection [pdf](https://ieeexplore.ieee.org/document/9506742)
 - #### Effort-free Automated Skeletal Abnormality Detection of Rat Fetuses on Whole-body Micro-CT Scans [arXiv](https://arxiv.org/abs/2106.01830)
