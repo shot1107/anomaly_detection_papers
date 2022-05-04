@@ -26,14 +26,14 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### Igeood: An Information Geometry Approach to Out-of-Distribution Detection [pdf](https://openreview.net/forum?id=mfwdY3U_9ea)
 - #### VOS: Learning What You Don't Know by Virtual Outlier Synthesis [arXiv](https://arxiv.org/abs/2202.01197)
 
-## AAAI2022 Mar 1, 2022 [link](https://aaai.org/Conferences/AAAI-22/wp-content/uploads/2021/12/AAAI-22_Accepted_Paper_List_Main_Technical_Track.pdf) (TODO: add some paper's PDF link)
-- #### A Causal Inference Look at Unsupervised Video Anomaly Detection
-- #### Comprehensive Regularization in a Bi-Directional Predictive Network for Video Anomaly Detection
+## AAAI2022 Mar 1, 2022 [link](https://aaai.org/Conferences/AAAI-22/wp-content/uploads/2021/12/AAAI-22_Accepted_Paper_List_Main_Technical_Track.pdf)
+- #### A Causal Inference Look at Unsupervised Video Anomaly Detection [pdf](https://www.aaai.org/AAAI22Papers/AAAI-37.LinX.pdf)
+- #### Comprehensive Regularization in a Bi-Directional Predictive Network for Video Anomaly Detection [pdf](https://www.aaai.org/AAAI22Papers/AAAI-470.ChenC.pdf)
 - #### Towards a Rigorous Evaluation of Time-series Anomaly Detection [arXiv](https://arxiv.org/abs/2109.05257)
-- #### Self-Training Multi-Sequence Learning with Transformer for Weakly Supervised Video Anomaly Detection
-- #### Unsupervised Anomaly Detection by Robust Density Estimation
-- #### Transferring the Contamination Factor between Anomaly Detection Domains by Shape Similarity
-- #### Calibrated Nonparametric Scan Statistics for Anomalous Pattern Detection in Graphs
+- #### Self-Training Multi-Sequence Learning with Transformer for Weakly Supervised Video Anomaly Detection [pdf](https://www.aaai.org/AAAI22Papers/AAAI-6637.LiS.pdf)
+- #### Unsupervised Anomaly Detection by Robust Density Estimation [pdf](https://www.aaai.org/AAAI22Papers/AAAI-11219.LiuB.pdf)
+- #### Transferring the Contamination Factor between Anomaly Detection Domains by Shape Similarity [pdf](https://www.aaai.org/AAAI22Papers/AAAI-12660.PeriniL.pdf)
+- #### Calibrated Nonparametric Scan Statistics for Anomalous Pattern Detection in Graphs [pdf](https://www.aaai.org/AAAI22Papers/AAAI-12900.ChunpaiW.pdf)
 - #### LUNAR: Unifying Local Outlier Detection Methods via Graph Neural Networks [arXiv](https://arxiv.org/abs/2112.05355)
 
 # 2021
