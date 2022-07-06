@@ -15,7 +15,13 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## IJCAI2022 Jul 23, 2022 (Paper notification: April 20, 2022) 
 
-## ICML2022 Jul 17, 2022 (Author Notification: May 04, 2022)
+## ICML2022 Jul 17, 2022 [link](https://icml.cc/Conferences/2022/AcceptedPapersInitial)
+- #### Deep Variational Graph Convolutional Recurrent Network for Multivariate Time Series Anomaly Detection
+- #### Rethinking Graph Neural Networks for Anomaly Detection [arXiv](https://arxiv.org/abs/2205.15508)
+- #### Latent Outlier Exposure for Anomaly Detection with Contaminated Data [arXiv](https://arxiv.org/abs/2202.08088)
+- #### FITNESS: (Fine Tune on New and Similar Samples) to detect anomalies in streams with drift and outliers [pdf](https://abishek90.github.io/fitness_ad.pdf)
+
+
 
 ## CVPR2022 Jun 24, 2022 (final dicision: March 2, 2022) [link](https://openaccess.thecvf.com/CVPR2022?day=all)
 - #### Self-Supervised Predictive Convolutional Attentive Block for Anomaly Detection [arXiv](http://arxiv.org/abs/2111.09099)
