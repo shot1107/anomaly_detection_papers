@@ -17,7 +17,18 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## ICML2022 Jul 17, 2022 (Author Notification: May 04, 2022)
 
-## CVPR2022 Jun 24, 2022 (final dicision: March 2, 2022)
+## CVPR2022 Jun 24, 2022 (final dicision: March 2, 2022) [link](https://openaccess.thecvf.com/CVPR2022?day=all)
+- #### Self-Supervised Predictive Convolutional Attentive Block for Anomaly Detection [arXiv](http://arxiv.org/abs/2111.09099)
+- #### Anomaly Detection via Reverse Distillation From One-Class Embedding [arXiv](http://arxiv.org/abs/2201.10703)
+- #### Bayesian Nonparametric Submodular Video Partition for Robust Anomaly Detection [arXiv](http://arxiv.org/abs/2203.12840)
+- #### Towards Total Recall in Industrial Anomaly Detection [arXiv](http://arxiv.org/abs/2106.08265)
+- #### Catching Both Gray and Black Swans: Open-Set Supervised Anomaly Detection [arXiv](http://arxiv.org/abs/2203.14506)
+- #### Deep Anomaly Discovery From Unlabeled Videos via Normality Advantage and Self-Paced Refinement [pdf](https://openaccess.thecvf.com/content/CVPR2022/html/Yu_Deep_Anomaly_Discovery_From_Unlabeled_Videos_via_Normality_Advantage_and_CVPR_2022_paper.html)
+- #### Learning Second Order Local Anomaly for General Face Forgery Detection [pdf](https://openaccess.thecvf.com/content/CVPR2022/html/Fei_Learning_Second_Order_Local_Anomaly_for_General_Face_Forgery_Detection_CVPR_2022_paper.html)
+- #### Deep Decomposition for Stochastic Normal-Abnormal Transport [arXiv](http://arxiv.org/abs/2111.14777)
+- #### Semiconductor Defect Detection by Hybrid Classical-Quantum Deep Learning [pdf](https://openaccess.thecvf.com/content/CVPR2022/html/Yang_Semiconductor_Defect_Detection_by_Hybrid_Classical-Quantum_Deep_Learning_CVPR_2022_paper.html)
+- #### Robust Outlier Detection by De-Biasing VAE Likelihoods [arXiv](http://arxiv.org/abs/2108.08760)
+
 
 ## ICLR2022 Apr 29, 2022 [link](https://openreview.net/group?id=ICLR.cc/2022/Conference)
 - #### Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy [arXiv](https://arxiv.org/abs/2110.02642)
