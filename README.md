@@ -13,7 +13,18 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## ICIP2022 Oct 16, 2022
 
-## IJCAI2022 Jul 23, 2022 (Paper notification: April 20, 2022) 
+## IJCAI-ECAI2022 Jul 23, 2022 [link](https://ijcai-22.org/main-track-accepted-papers/)
+- #### Anomaly Detection by Leveraging Incomplete Anomalous Knowledge with Anomaly-Aware Bidirectional GANs [arXiv](https://arxiv.org/abs/2204.13335)
+- #### GRELEN: Multivariate Time Series Anomaly Detection from the Perspective of Graph Relational Learning 
+- #### Reconstruction Enhanced Multi-View Contrastive Learning for Anomaly Detection on Attributed Networks [arXiv](https://arxiv.org/abs/2205.04816)
+- #### HashNWalk: Hash and Random Walk Based Anomaly Detection in Hyperedge Streams [arXiv](https://arxiv.org/abs/2204.13822)
+- #### CADET: Calibrated Anomaly Detection for Mitigating Hardness Bias [pdf](https://bhooi.github.io/papers/cadet_ijcai22.pdf)
+- #### Understanding and Mitigating Data Contamination in Deep Anomaly Detection: A Kernel-based Approach 
+- #### Neural Contextual Anomaly Detection for Time Series [arXiv](https://arxiv.org/abs/2107.07702)
+- #### Constrained Adaptive Projection with Pretrained Features for Anomaly Detection [arXiv](https://arxiv.org/abs/2112.02597)
+- #### Raising the Bar in Graph-level Anomaly Detection [arXiv](https://arxiv.org/abs/2205.13845)
+- #### Can Abnormality be Detected by Graph Neural Networks? [pdf](http://yangy.org/works/gnn/IJCAI22_Abnormality.pdf)
+
 
 ## ICML2022 Jul 17, 2022 [link](https://icml.cc/Conferences/2022/AcceptedPapersInitial)
 - #### Deep Variational Graph Convolutional Recurrent Network for Multivariate Time Series Anomaly Detection
