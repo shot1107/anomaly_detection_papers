@@ -26,6 +26,7 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
    - **Domain:** Image / **Dataset:** KSDD2, MVTec AD / **Index Terms:**  vector quantization, encoder-decoder, ResNet, UNet <details>
       - VQ-VAE 等で用いられているベクトル量子化をとり入れた encoder-decoderベースのアーキテクチャ dual subspace re-projection network (DSR) を提案。Decoder は２種類用いられ、１つ目は general object appearance decoder (あらゆる自然画像の再構成に対応する, ImageNetを使用) 、２つ目は object-specific decoder  (あるオブジェクト(カテゴリ)の再構成に特化する)。異常箇所の可視化は、general object appearance decoder によって得られた画像 I_gen と object-specific decoder によって得られた画像 I_spc をチャネル方向に結合(この操作を行うモジュールは anomaly detection module と論文中で定義されている)したデータを Unetベースのセグメンテーションモデルに入力することにより行われる。訓練は３つのステップからなる。ステップ１は、VQ codebook(画像から得られた特徴ベクトルの量子化に用いられる)、general object appearance decoder の訓練が行われる。ステップ２は、anomaly detection module と object specific appearance decoder の訓練が行われる。ここでは、量子化特徴空間を利用し生成された異常画像も用いられる。ステップ３は anomaly detection module で得られた 異常箇所のマスク画像をアップサンプリングする目的で行われる。Dream, CutPaste 等と比較し優れた性能。MVTec AD で 98.2% のAUROC。
       - 擬似的な異常画像の生成をかなり工夫した Self-Supervised Learning ベースの手法ともいえる。SSL ベースの代表的な手法である CutPaste に対しては、補助的なデータセットに依存すること・異常生成のプロセスに依存すること・分布に近い異常の生成が困難であることを問題点としてあげている。手法を正確に理解するには [VQ-VAE論文](https://arxiv.org/abs/1711.00937)は必読そう。
+      ![Screenshot from 2022-09-17 08-18-15](https://user-images.githubusercontent.com/30290195/190829841-cbd3d0f1-088a-4633-9237-446ae37d54c5.png)
      </details>
 
 
@@ -166,6 +167,7 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
       - CutPaste という画像中の長方形領域を別の場所にペーストしたような data augmentation を提案、CutPaste によって生成した擬似的な異常画像を用いて、自己教師あり学習として欠陥箇所の表現を学習する。画像の異常スコアは、(獲得した表現上での) Gaussian density estimator を用いて計算される。Localization (≒セグメンテーション)では、パッチ単位(切り取られた部分画像)で学習した表現を利用する。テスト時は、スライドしながら画像のパッチを取得していき、それぞれのパッチで異常スコアを計算していく。そうすると n×n (nは入力画像サイズより小さい)の異常マップが作成でき、それを Gaussian smoothing を用いて upsampling することで元の画像サイズの異常マップを生成する。MVTec AD データセットで当時の SoTA を達成。
 169
    - アイディアはシンプルだが精度向上のための細かい詰めがすごい。
+   ![Screenshot from 2022-09-17 08-20-46](https://user-images.githubusercontent.com/30290195/190829866-4a592e1d-9531-477e-a424-9f4014374f57.png)
      </details>
    
 - #### Pixel-Wise Anomaly Detection in Complex Driving Scenes [arXiv](http://arxiv.org/abs/2103.05445)
