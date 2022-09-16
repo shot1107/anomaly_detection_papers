@@ -23,9 +23,10 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### DenseHybrid: Hybrid Anomaly Detection for Dense Open-set Recognition [arXiv](http://arxiv.org/abs/2207.02606)
 - #### Natural Synthetic Anomalies for Self-Supervised Anomaly Detection and Localization [arXiv](http://arxiv.org/abs/2109.15222) [実装(著者)](https://github.com/hmsch/natural-synthetic-anomalies)
 - #### DSR -- A dual subspace re-projection network for surface anomaly detection [arXiv](http://arxiv.org/abs/2208.01521)
-   - **Domain:** Image / **Dataset:** KSDD2, MVTec AD / **Index Terms:**  vector quantization, encoder-decoder, ResNet, UNet
-   - VQ-VAE 等で用いられているベクトル量子化をとり入れた encoder-decoderベースのアーキテクチャ dual subspace re-projection network (DSR) を提案。Decoder は２種類用いられ、１つ目は general object appearance decoder (あらゆる自然画像の再構成に対応する, ImageNetを使用) 、２つ目は object-specific decoder  (あるオブジェクト(カテゴリ)の再構成に特化する)。異常箇所の可視化は、general object appearance decoder によって得られた画像 I_gen と object-specific decoder によって得られた画像 I_spc をチャネル方向に結合(この操作を行うモジュールは anomaly detection module と論文中で定義されている)したデータを Unetベースのセグメンテーションモデルに入力することにより行われる。訓練は３つのステップからなる。ステップ１は、VQ codebook(画像から得られた特徴ベクトルの量子化に用いられる)、general object appearance decoder の訓練が行われる。ステップ２は、anomaly detection module と object specific appearance decoder の訓練が行われる。ここでは、量子化特徴空間を利用し生成された異常画像も用いられる。ステップ３は anomaly detection module で得られた 異常箇所のマスク画像をアップサンプリングする目的で行われる。Dream, CutPaste 等と比較し優れた性能。MVTec AD で 98.2% のAUROC。
-   - 擬似的な異常画像の生成をかなり工夫した Self-Supervised Learning ベースの手法ともいえる。SSL ベースの代表的な手法である CutPaste に対しては、補助的なデータセットに依存すること・異常生成のプロセスに依存すること・分布に近い異常の生成が困難であることを問題点としてあげている。手法を正確に理解するには [VQ-VAE論文](https://arxiv.org/abs/1711.00937)は必読そう。
+   - **Domain:** Image / **Dataset:** KSDD2, MVTec AD / **Index Terms:**  vector quantization, encoder-decoder, ResNet, UNet <details>
+      - VQ-VAE 等で用いられているベクトル量子化をとり入れた encoder-decoderベースのアーキテクチャ dual subspace re-projection network (DSR) を提案。Decoder は２種類用いられ、１つ目は general object appearance decoder (あらゆる自然画像の再構成に対応する, ImageNetを使用) 、２つ目は object-specific decoder  (あるオブジェクト(カテゴリ)の再構成に特化する)。異常箇所の可視化は、general object appearance decoder によって得られた画像 I_gen と object-specific decoder によって得られた画像 I_spc をチャネル方向に結合(この操作を行うモジュールは anomaly detection module と論文中で定義されている)したデータを Unetベースのセグメンテーションモデルに入力することにより行われる。訓練は３つのステップからなる。ステップ１は、VQ codebook(画像から得られた特徴ベクトルの量子化に用いられる)、general object appearance decoder の訓練が行われる。ステップ２は、anomaly detection module と object specific appearance decoder の訓練が行われる。ここでは、量子化特徴空間を利用し生成された異常画像も用いられる。ステップ３は anomaly detection module で得られた 異常箇所のマスク画像をアップサンプリングする目的で行われる。Dream, CutPaste 等と比較し優れた性能。MVTec AD で 98.2% のAUROC。
+      - 擬似的な異常画像の生成をかなり工夫した Self-Supervised Learning ベースの手法ともいえる。SSL ベースの代表的な手法である CutPaste に対しては、補助的なデータセットに依存すること・異常生成のプロセスに依存すること・分布に近い異常の生成が困難であることを問題点としてあげている。手法を正確に理解するには [VQ-VAE論文](https://arxiv.org/abs/1711.00937)は必読そう。
+     </details>
 
 
 ## ICIP2022 Oct 16, 2022 [link](https://cmsworkshops.com/ICIP2022/papers/accepted_papers.php) TODO: add pdf links
@@ -113,16 +114,19 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## ICIP2021 Sep 22, 2021
 - #### A Two-Stage Autoencoder For Visual Anomaly Detection [pdf](https://ieeexplore.ieee.org/document/9506538)
-   - **Domain:** Image / **Dataset:** MNIST, FMNIST, CIFAR10, Fastener / **Index Terms:** Autoencoder, RotNet  
-   - Deep convolutional autoencoder（DCAE)が異常箇所までも再構成してしまう問題を解決するため、2ステージで学習を行う非対称DCAEを提案。まず、RotNet をEncoderとして学習し、学習済みRotNetを凍結したまま2種類のDecoderを学習(1つはloss関数にMSEを、もう1つはSSIMを使用)。2つのDecoderの結果を組み合わせるて最終的な異常スコアを得る。FMNIST, Fastenerにおいてベースライン手法より優れた性能。
+   - **Domain:** Image / **Dataset:** MNIST, FMNIST, CIFAR10, Fastener / **Index Terms:** Autoencoder, RotNet  <details>
+      - Deep convolutional autoencoder（DCAE)が異常箇所までも再構成してしまう問題を解決するため、2ステージで学習を行う非対称DCAEを提案。まず、RotNet をEncoderとして学習し、学習済みRotNetを凍結したまま2種類のDecoderを学習(1つはloss関数にMSEを、もう1つはSSIMを使用)。2つのDecoderの結果を組み合わせるて最終的な異常スコアを得る。FMNIST, Fastenerにおいてベースライン手法より優れた性能。
+     </details>
 - #### Anomaly Detection via Self-organizing Map [arXiv](https://arxiv.org/abs/2107.09903)
 - #### Deep Unsupervised Image Anomaly Detection: An Information Theoretic Framework [arXiv](https://arxiv.org/abs/2012.04837)
 - #### Joint Anomaly Detection and Inpainting for Microscopy Images Via Deep Self-Supervised Learning [pdf](https://ieeexplore.ieee.org/abstract/document/9506454)
 - #### Multi-Scale Background Suppression Anomaly Detection In Surveillance Videos [pdf](https://ieeexplore.ieee.org/document/9506580)
 - #### Particle Swarm And Pattern Search Optimisation Of An Ensemble Of Face Anomaly Detectors [pdf](https://ieeexplore.ieee.org/document/9506251)
 - #### SAGAN: Skip-Attention GAN For Anomaly Detection [pdf](https://ieeexplore.ieee.org/abstract/document/9506332)
-   - **Domain:** Image / **Dataset:** CIFAR-10, LBOT(独自) / **Index Terms:**  GAN, Attention
-   - Skip-GANomaly をベースに Attention モジュールを追加した、異常検知手法 Skip-Attention GAN (SAGAN) を提案。Attention モジュールは、異常が現れる局所的な領域に注目することを目的としている。具体的な構造は、U-Net 型のネットワークで Skip connection の前に CBAM(convolutional block attention module) が挿入されているような形になっている。EGBAD, GANomaly, Skip-GANomaly と比較し、AUC が大幅に向上。
+   - **Domain:** Image / **Dataset:** CIFAR-10, LBOT(独自) / **Index Terms:**  GAN, Attention  <details>
+      - Skip-GANomaly をベースに Attention モジュールを追加した、異常検知手法 Skip-Attention GAN (SAGAN) を提案。Attention モジュールは、異常が現れる局所的な領域に注目することを目的としている。具体的な構造は、U-Net 型のネットワークで Skip connection の前に CBAM(convolutional block attention module) が挿入されているような形になっている。EGBAD, GANomaly, Skip-GANomaly と比較し、AUC が大幅に向上。
+     </details>
+   
 - #### Toward Unsupervised 3d Point Cloud Anomaly Detection Using Variational Autoencoder [pdf](https://ieeexplore.ieee.org/document/9506795)
 - #### Unsupervised Variability Normalization For Anomaly Detection [pdf](https://ieeexplore.ieee.org/document/9506742)
 - #### Effort-free Automated Skeletal Abnormality Detection of Rat Fetuses on Whole-body Micro-CT Scans [arXiv](https://arxiv.org/abs/2106.01830)
@@ -158,9 +162,12 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 ## CVPR2021 Jun 19, 2021
 - #### MIST: Multiple Instance Self-Training Framework for Video Anomaly Detection [arXiv](http://arxiv.org/abs/2101.00529)
 - #### CutPaste: Self-Supervised Learning for Anomaly Detection and Localization [arXiv](http://arxiv.org/abs/2104.04015)
-   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  Self-Supervised Learning, Data Augmentation, ResNet, EfficientNet
-   - CutPaste という画像中の長方形領域を別の場所にペーストしたような data augmentation を提案、CutPaste によって生成した擬似的な異常画像を用いて、自己教師あり学習として欠陥箇所の表現を学習する。画像の異常スコアは、(獲得した表現上での) Gaussian density estimator を用いて計算される。Localization (≒セグメンテーション)では、パッチ単位(切り取られた部分画像)で学習した表現を利用する。テスト時は、スライドしながら画像のパッチを取得していき、それぞれのパッチで異常スコアを計算していく。そうすると n×n (nは入力画像サイズより小さい)の異常マップが作成でき、それを Gaussian smoothing を用いて upsampling することで元の画像サイズの異常マップを生成する。MVTec AD データセットで当時の SoTA を達成。
-   - アイディアはシンプルだが精度向上のための細かい詰めがすごい。
+   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  Self-Supervised Learning, Data Augmentation, ResNet, EfficientNet  <details>
+      - CutPaste という画像中の長方形領域を別の場所にペーストしたような data augmentation を提案、CutPaste によって生成した擬似的な異常画像を用いて、自己教師あり学習として欠陥箇所の表現を学習する。画像の異常スコアは、(獲得した表現上での) Gaussian density estimator を用いて計算される。Localization (≒セグメンテーション)では、パッチ単位(切り取られた部分画像)で学習した表現を利用する。テスト時は、スライドしながら画像のパッチを取得していき、それぞれのパッチで異常スコアを計算していく。そうすると n×n (nは入力画像サイズより小さい)の異常マップが作成でき、それを Gaussian smoothing を用いて upsampling することで元の画像サイズの異常マップを生成する。MVTec AD データセットで当時の SoTA を達成。
+169
+   - アイディアはシンプルだが精度向上のための細かい詰めがすごい。
+     </details>
+   
 - #### Pixel-Wise Anomaly Detection in Complex Driving Scenes [arXiv](http://arxiv.org/abs/2103.05445)
 - #### PANDA: Adapting Pretrained Features for Anomaly Detection and Segmentation [arXiv](http://arxiv.org/abs/2010.05903)
 - #### Glancing at the Patch: Anomaly Localization With Global and Local Feature Comparison [pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Glancing_at_the_Patch_Anomaly_Localization_With_Global_and_Local_CVPR_2021_paper.pdf)
@@ -170,14 +177,17 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## ICLR 2021 May 3, 2021
 - #### Explainable Deep One-Class Classification [arXiv](https://arxiv.org/abs/2007.01760)
-   - **Domain:** Image / **Dataset:**  Fashion-MNIST, CIFAR-10, ImageNet, MVTec AD / **Index Terms:**  one-class classification(OCC), transposed Gaussian convolution
-   - 説明可能(≒可視化可能)な異常検知手法、Fully Convolutional Data Description (FCDD) を提案。Fully Convolutional Network (FCN, 全結合層を含まないCNN) と Hypersphere Classifier (HSC, 正常データと異常データを用いて分布を学習、正常データは中心近くに、異常データは中心から遠くにマッピングされる) の考え方を元にしている。FCDD は R^(c×h×w) → R^(u×v) のマッピングを学習し、ダウンサンプリングされた異常マップを生成する(元画像から小さな異常マップを生成するイメージ)。学習には異常データも用いられるが、MVTec AD のような異常データが訓練データに含まれないデータセットを用いる場合は、シミのようなノイズを正常データに埋め込むことで、擬似的な異常データを生成している。その異常マップをガウシアンカーネルを用いた転置畳み込みを用いてアップサンプリングし、最終的な異常マップを得る。AnoGAN や VAE 等のベースラインの AUC を上回っており、半教師あり(異常データを少数用いる)で学習することで AUC が向上することも確認している。
+   - **Domain:** Image / **Dataset:**  Fashion-MNIST, CIFAR-10, ImageNet, MVTec AD / **Index Terms:**  one-class classification(OCC), transposed Gaussian convolution  <details>
+      - 説明可能(≒可視化可能)な異常検知手法、Fully Convolutional Data Description (FCDD) を提案。Fully Convolutional Network (FCN, 全結合層を含まないCNN) と Hypersphere Classifier (HSC, 正常データと異常データを用いて分布を学習、正常データは中心近くに、異常データは中心から遠くにマッピングされる) の考え方を元にしている。FCDD は R^(c×h×w) → R^(u×v) のマッピングを学習し、ダウンサンプリングされた異常マップを生成する(元画像から小さな異常マップを生成するイメージ)。学習には異常データも用いられるが、MVTec AD のような異常データが訓練データに含まれないデータセットを用いる場合は、シミのようなノイズを正常データに埋め込むことで、擬似的な異常データを生成している。その異常マップをガウシアンカーネルを用いた転置畳み込みを用いてアップサンプリングし、最終的な異常マップを得る。AnoGAN や VAE 等のベースラインの AUC を上回っており、半教師あり(異常データを少数用いる)で学習することで AUC が向上することも確認している。
+     </details>
 
 ## AAAI2021 Feb 2, 2021
 - #### LREN: Low-Rank Embedded Network for Sample-Free Hyperspectral Anomaly Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16536)
 - #### GAN Ensemble for Anomaly Detection [arXiv](https://arxiv.org/abs/2012.07988)
-  - **Domain:** Image / **Dataset:** MNIST, CIFAR-10, OCT, KDD99 / **Index Terms:** GAN, Ensemble  
-  - GANの学習には不安定性やモード崩壊などいくつかの欠点があるが、近年の研究でGeneratorやDiscriminatorを複数用意することでそれらの問題を解決できることが示されている。この論文では、複数のGenerator(実際にはEncoder-Decoder)とDiscriminatorを用意し、それらをアンサンブルすることで画像の異常検出問題を解決している。訓練時にはGeneratorは複数のDiscriminatorからフィードバックを受け、Discriminatorは複数のGeneratorの出力を識別する。推論時はすべてネットワーク(Encoder-Decoder⇨Discriminator)の出力の平均をとる。ベースモデルとして、f-AnoGAN・EGBAD・GANomaly・Skip-GANomalyを使用し、すべてのデータセットで単体モデルよりアンサンブルの方が優れた性能。
+  - **Domain:** Image / **Dataset:** MNIST, CIFAR-10, OCT, KDD99 / **Index Terms:** GAN, Ensemble  <details>
+      - GANの学習には不安定性やモード崩壊などいくつかの欠点があるが、近年の研究でGeneratorやDiscriminatorを複数用意することでそれらの問題を解決できることが示されている。この論文では、複数のGenerator(実際にはEncoder-Decoder)とDiscriminatorを用意し、それらをアンサンブルすることで画像の異常検出問題を解決している。訓練時にはGeneratorは複数のDiscriminatorからフィードバックを受け、Discriminatorは複数のGeneratorの出力を識別する。推論時はすべてネットワーク(Encoder-Decoder⇨Discriminator)の出力の平均をとる。ベースモデルとして、f-AnoGAN・EGBAD・GANomaly・Skip-GANomalyを使用し、すべてのデータセットで単体モデルよりアンサンブルの方が優れた性能。
+     </details> 
+  
 - #### Anomaly Attribution with Likelihood Compensation [pdf](https://ide-research.net/papers/2021_AAAI_Ide.pdf)
 - #### Regularizing Attention Networks for Anomaly Detection in Visual Question Answering [arXiv](https://arxiv.org/abs/2009.10054)
 - #### Appearance-Motion Memory Consistency Network for Video Anomaly Detection [pdf](https://ojs.aaai.org/index.php/AAAI/article/view/16177)
@@ -267,8 +277,9 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## Other important papers published in 2020 / その他2020年の重要論文
 - #### Modeling the Distribution of Normal Data in Pre-Trained Deep Features for Anomaly Detection (ICPR2020) [arXiv](https://arxiv.org/abs/2005.14140)
-   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  EfficientNet, Multivariate Gaussian, Mahalanobis Distance
-   - ImageNet によって事前学習された EfficientNet をそのまま利用し、その特徴表現を用いて異常検知を行う手法を提案。学習パートでは、正常画像のみを用い、EfficientNet に正常画像を与えたときに生成された特徴ベクトルを近似する多変量ガウス分布を求める。推論パートでは、テスト画像をモデルに入力して得られた特徴表現と分布の平均とのマハラノビス距離を求め、それを元に異常度を計算する。モデルの再訓練をしていないにも関わらず、95.8という高いAUROCを達成。
+   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  EfficientNet, Multivariate Gaussian, Mahalanobis Distance  <details>
+      - ImageNet によって事前学習された EfficientNet をそのまま利用し、その特徴表現を用いて異常検知を行う手法を提案。学習パートでは、正常画像のみを用い、EfficientNet に正常画像を与えたときに生成された特徴ベクトルを近似する多変量ガウス分布を求める。推論パートでは、テスト画像をモデルに入力して得られた特徴表現と分布の平均とのマハラノビス距離を求め、それを元に異常度を計算する。モデルの再訓練をしていないにも関わらず、95.8という高いAUROCを達成。
+     </details>
 
 # 2019
 ## NeurIPS2019 Dec 8, 2019
@@ -309,9 +320,12 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### Object-centric Auto-encoders and Dummy Anomalies for Abnormal Event Detection in Video [arXiv](https://arxiv.org/abs/1812.04960)
 - #### ManTra-Net: Manipulation Tracing Network for Detection and Localization of Image Forgeries With Anomalous Features [pdf](https://openaccess.thecvf.com/content_CVPR_2019/html/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.html)
 - #### MVTec AD -- A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection [pdf](https://openaccess.thecvf.com/content_CVPR_2019/html/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.html)
-   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  Dataset
-   - 画像の異常検出用のデータセット、MVTec Anomaly Detection (MVTec AD) の紹介論文。5種類のテクスチャカテゴリのデータと、10種類のオブジェクトカテゴリのデータからなり、全部で5354枚の画像が含まれる。セグメンテーション(ピクセル単位の欠陥箇所特定)タスク用に、欠陥箇所を示した grand truth 画像も提供される。AE や AnoGAN等の基本的な手法を用いた実験も行っている。
-   - 2020~に発表された画像の異常検出を扱った論文では、このデータセットが使用されていることがかなり多い。
+   - **Domain:** Image / **Dataset:** MVTec AD / **Index Terms:**  Dataset  <details>
+      - 画像の異常検出用のデータセット、MVTec Anomaly Detection (MVTec AD) の紹介論文。5種類のテクスチャカテゴリのデータと、10種類のオブジェクトカテゴリのデータからなり、全部で5354枚の画像が含まれる。セグメンテーション(ピクセル単位の欠陥箇所特定)タスク用に、欠陥箇所を示した grand truth 画像も提供される。AE や AnoGAN等の基本的な手法を用いた実験も行っている。
+327
+   - 2020~に発表された画像の異常検出を扱った論文では、このデータセットが使用されていることがかなり多い。
+     </details>
+   
 - #### Learning Regularity in Skeleton Trajectories for Anomaly Detection in Videos [arXiv](https://openaccess.thecvf.com/CVPR2019?day=2019-06-20)
 - #### Meta-learning Convolutional Neural Architectures for Multi-target Concrete Defect Classification with the COncrete DEfect BRidge IMage Dataset [arXiv](https://arxiv.org/abs/1904.08486)
 
@@ -333,12 +347,17 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## Other important papers published in 2019 / その他2019年の重要論文
 - #### f-AnoGAN: Fast unsupervised anomaly detection with generative adversarial networks (Medical Image Analysis · January 2019) [pdf](https://www.researchgate.net/publication/330796048_f-AnoGAN_Fast_Unsupervised_Anomaly_Detection_with_Generative_Adversarial_Networks) [実装(著者)](https://github.com/tSchlegl/f-AnoGAN)
-  - **Domain:** image / **Dataset:** 網膜のボリュームデータ(AnoGAN の論文と同様のもの) / **Index Terms:** GAN, WGAN  
-  - GANベースの異常検出手法 f-AnoGAN を提案。GAN のアーキテクチャには WGAN を採用。入力画像 x からランダムノイズ z のマッピングのため、Encoder を導入。Encoder 学習の損失関数には izi_f を使用、izi_f は 入力画像 x と生成画像 x’ の差と、Discriminator の中間層の出力の差を元に計算される。AE, ALI, iterative ベースの手法と比較し、高いROCAUC。
+  - **Domain:** image / **Dataset:** 網膜のボリュームデータ(AnoGAN の論文と同様のもの) / **Index Terms:** GAN, WGAN  <details>
+      - GANベースの異常検出手法 f-AnoGAN を提案。GAN のアーキテクチャには WGAN を採用。入力画像 x からランダムノイズ z のマッピングのため、Encoder を導入。Encoder 学習の損失関数には izi_f を使用、izi_f は 入力画像 x と生成画像 x’ の差と、Discriminator の中間層の出力の差を元に計算される。AE, ALI, iterative ベースの手法と比較し、高いROCAUC。
+     </details> 
+  
 - #### Skip-GANomaly: Skip Connected and Adversarially Trained Encoder-Decoder Anomaly Detection (IJCNN 2019) [arXiv](https://arxiv.org/abs/1901.08954) [実装(著者)](https://github.com/samet-akcay/skip-ganomaly)
-   - **Domain:** Image / **Dataset:** CIFAR10, UBA, FFOB / **Index Terms:** GAN, encoder-decoder, skip connection
-   - GANomaly と同じ著者の論文。GANomaly では Generator として encoder-decoder が用いられていたが、そこに UNet スタイルの skip connection が導入されている(encoder の i 層目の出力が decoder の n-1 層目に接続されているような構造)。また、Discriminator に関する、Adversarial Loss にも変更が加えられている。AnoGAN, EGBAD, GANomaly と比較し、ほとんどのデータセットで最高の AUC。
-   - 論文中の再構成後の画像を見ると、異常箇所まで再構成してしまっているように見える、skip connection の影響で再構成能力が高まりすぎている可能性も？
+   - **Domain:** Image / **Dataset:** CIFAR10, UBA, FFOB / **Index Terms:** GAN, encoder-decoder, skip connection  <details>
+      - GANomaly と同じ著者の論文。GANomaly では Generator として encoder-decoder が用いられていたが、そこに UNet スタイルの skip connection が導入されている(encoder の i 層目の出力が decoder の n-1 層目に接続されているような構造)。また、Discriminator に関する、Adversarial Loss にも変更が加えられている。AnoGAN, EGBAD, GANomaly と比較し、ほとんどのデータセットで最高の AUC。
+359
+   - 論文中の再構成後の画像を見ると、異常箇所まで再構成してしまっているように見える、skip connection の影響で再構成能力が高まりすぎている可能性も？
+     </details>
+  
 
 # 2018
 ## NeurIPS2018 Dec 2, 2018
@@ -351,8 +370,9 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 - #### A Defect Inspection Method for Machine Vision Using Defect Probability Image with Deep Convolutional Neural Network [pdf](https://www.semanticscholar.org/paper/A-Defect-Inspection-Method-for-Machine-Vision-Using-Jang-Yun/53b901258cfd4e4741ae9ae176977c2525621a0d)
 - #### AVID: Adversarial Visual Irregularity Detection [arXiv](https://arxiv.org/abs/1805.09521)
 - #### GANomaly: Semi-Supervised Anomaly Detection via Adversarial Training [arXiv](https://arxiv.org/abs/1805.06725) [実装(著者)](https://github.com/samet-akcay/ganomaly)
-  - **Domain:** Image / **Dataset:** MNIST, CIFAR10, UBA, FFOB / **Index Terms:** GAN, 
-  - GANベースの異常検出手法 GANomaly を提案。Generator に encoder-decoder-encoderアーキテクチャを導入。最初の Encoder はテスト画像 x から z(ランダムノイズ)を生成、Decoder は z から訓練データ(正常画像)に近い画像 x’ を生成、2つめの Encoder は x’ から z に近いランダムノイズ z’ を生成する。 (z, z’)に関する Encoder Loss、 (x, x’)に関する Contextual Loss、Discriminator の出力(Softmaxの前)に関する Adversarial Loss、3種類の損失関数の重み付き和で Generator を訓練する。AnoGAN, EGBAD と比較し、ほぼすべてのデータセットで最高精度。
+  - **Domain:** Image / **Dataset:** MNIST, CIFAR10, UBA, FFOB / **Index Terms:** GAN  <details>
+      - GANベースの異常検出手法 GANomaly を提案。Generator に encoder-decoder-encoderアーキテクチャを導入。最初の Encoder はテスト画像 x から z(ランダムノイズ)を生成、Decoder は z から訓練データ(正常画像)に近い画像 x’ を生成、2つめの Encoder は x’ から z に近いランダムノイズ z’ を生成する。 (z, z’)に関する Encoder Loss、 (x, x’)に関する Contextual Loss、Discriminator の出力(Softmaxの前)に関する Adversarial Loss、3種類の損失関数の重み付き和で Generator を訓練する。AnoGAN, EGBAD と比較し、ほぼすべてのデータセットで最高精度。
+     </details>
 
 - #### Detecting Anomalous Trajectories via Recurrent Neural Networks [pdf](https://faculty.ucmerced.edu/mhyang/papers/accv2018_anomaly.pdf)
 
@@ -391,12 +411,16 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 
 ## Other important papers published in 2018 / その他2018年の重要論文
 - #### EFFICIENT GAN-BASED ANOMALY DETECTION (ICLR2018 workshop) [arXiv](https://arxiv.org/abs/1802.06222)
-  - **Domain:** image / **Dataset:** MNIST, KDD99 / **Index Terms:** GAN, Encoder  
-  - GANベースの異常検出手法を提案(Efficient GAN, EGBADと呼ばれている)。AnoGANではテスト画像 x に対応する z(ランダムノイズ)を勾配降下法によって更新しながら求めていたが、この論文では、x から 直接 z を生成する Encoder を導入した。AnoGAN と比較し、精度の向上、推論時間は700~900倍速くなった。
+  - **Domain:** image / **Dataset:** MNIST, KDD99 / **Index Terms:** GAN, Encoder  <details>
+      - GANベースの異常検出手法を提案(Efficient GAN, EGBADと呼ばれている)。AnoGANではテスト画像 x に対応する z(ランダムノイズ)を勾配降下法によって更新しながら求めていたが、この論文では、x から 直接 z を生成する Encoder を導入した。AnoGAN と比較し、精度の向上、推論時間は700~900倍速くなった。
+     </details>
+
 
 # 2017
 
 ## important papers published in 2017 / 2017年の重要論文
 - #### Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery (accepted by  IPMI 2017) [arXiv](https://arxiv.org/pdf/1703.05921.pdf)
-  - **Domain:** image / **Dataset:** 網膜のボリュームデータ(clinical high resolution SD-OCT volumes of the retina) / **Index Terms:** GAN  
-  - GANを利用した異常検出手法(この論文が初出？)AnoGANを提案。GANに正常画像のみを学習させると、Generator Gはz(ランダムノイズ)から正常画像のみを生成する。テストデータ x が異常画像である場合、x と生成された画像には差分が生まれる。x に対応する z は residural loss と discrimination loss を元に誤差逆伝搬法で更新しながら、求めていく。
+  - **Domain:** image / **Dataset:** 網膜のボリュームデータ(clinical high resolution SD-OCT volumes of the retina) / **Index Terms:** GAN  <details>
+      - GANを利用した異常検出手法(この論文が初出？)AnoGANを提案。GANに正常画像のみを学習させると、Generator Gはz(ランダムノイズ)から正常画像のみを生成する。テストデータ x が異常画像である場合、x と生成された画像には差分が生まれる。x に対応する z は residural loss と discrimination loss を元に誤差逆伝搬法で更新しながら、求めていく。
+     </details>
+
