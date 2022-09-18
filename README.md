@@ -7,7 +7,13 @@ CV・ML・AI 分野の Top Conferences(CVPR, NeurIPS, ICCV, ECCV, AAAI, ICML, IJ
 検索ワード : anom*, abnom*, defect, outlier 
 
 # 2022
-## NeurIPS2022 Nov 26, 2022
+## NeurIPS2022 Nov 26, 2022 [link](https://nips.cc/Conferences/2022/Schedule?type=Poster) TODO: add pdf links
+- #### Perturbation Learning Based Anomaly Detection [arXiv](https://arxiv.org/abs/2206.02704)
+- #### SoftCore: Unsupervised Anomaly Detection with Noisy Data
+- #### Dual-discriminative Graph Neural Network for Imbalanced Graph-level Anomaly Detection
+- #### A Unified Model for Multi-class Anomaly Detection [arXiv](https://arxiv.org/abs/2206.03687)
+- #### Few-Shot Fast-Adaptive Anomaly Detection 
+
 
 ## ECCV2022 Oct 24, 2022 [link](https://huggingface.co/spaces/ECCV2022/ECCV2022_papers) TODO: add pdf links
 - #### Registration based Few-Shot Anomaly Detection [arXiv](http://arxiv.org/abs/2207.07361)
