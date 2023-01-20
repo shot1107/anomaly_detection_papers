@@ -52,6 +52,15 @@ anomaly / defect / outlier / out-of-distribution / change
 - #### Outlying sequence detection in large datasets: Comparison of universal hypothesis testing and clustering
   - Domain:  / Dataset:  / Keywords:  
   - a
+- #### Online change detection of linear regression models
+  - Domain:  / Dataset:  / Keywords:  
+  - a
+- #### Detecting the instant of emotion change from speech using a martingale framework
+  - Domain:  / Dataset:  / Keywords:  
+  - a
+- #### Information theoretic multivariate change detection for multisensory information processing in Internet of Things
+  - Domain:  / Dataset:  / Keywords:  
+  - a
 
 
 ## InterSpeech2016 - Sep 2016 in San Francisco - [conference link](https://www.isca-speech.org/archive/interspeech_2016/index.html) - [accepted papers](https://www.isca-speech.org/archive/interspeech_2016/index.html)
